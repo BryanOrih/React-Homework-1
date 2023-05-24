@@ -1,0 +1,21 @@
+.sideBar{
+    position: absolute;
+    background-color: #526D82;
+    width: 14em;
+    height: 100vh;
+    margin-left: -14em;
+    transition: 1s;
+}
+.open{
+    margin-left: 0;
+    transition: 1s;
+}
+.sideBar h1{
+    margin: 0;
+}
+.sideBar i{
+    font-size: 1.3em;
+    margin-top: 5%;
+    cursor: pointer;
+    margin-left: 80%;
+}
