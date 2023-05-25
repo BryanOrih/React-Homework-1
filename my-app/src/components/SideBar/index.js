@@ -5,21 +5,14 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 const SideBar = () => {
-    const { toggle, setToggle } = useContext(MainContext)
+    const { toggle, setToggle, catergories } = useContext(MainContext)
     const handleClose = () =>{
         setToggle("")
     }
-    let catergories =[
-      {name:"Home", url:""},
-      {name:"HTML", url:"HTML"},
-      {name:"CSS", url: "CSS"},
-      {name:"JavaScript", url: "JavaScript"},
-      {name:"Javascript Dom", url: "JavaScriptDom"},
-      {name:"React", url: "React"}
-    ]
-    let catergoryItems = catergories.map((item)=>{
+
+    let catergoryItems = catergories.map((item, index)=>{
       return(
-        <li>
+        <li key={index}>
           <Link to={`/${item.url}`}>{item.name}</Link>
         </li>
       )

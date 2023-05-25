@@ -18,15 +18,21 @@
     padding-right: 33px;
     width: 8em;
 }
-
+.input:focus{
+    border-radius: 10px 10px 0px 0px;
+    outline: none;
+}
 .search-icon {
 position: absolute;
-top: 2.25em;
+top: 2.45em;
 right: 10.8em;
 cursor: pointer;
 opacity: 0.5;
 }
-
+.searchDisplay{
+    position: absolute;
+    background-color: white;
+}
 .toggle{
     font-size: 30px;
     margin-left: 2em;
