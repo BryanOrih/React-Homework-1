@@ -1,0 +1,64 @@
+.MainPage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+}
+.MainPage img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 3vw;
+    margin-top: 2vh;
+    width: 80%;
+}
+.Important2{
+    display: none;
+}
+.MainPage div{
+    margin-right: 3vw;
+}
+.MainPage div h1{
+    font-size: 2vw;
+}
+.MainPage div p{
+    font-size: 1.5vw;
+}
+@media only screen and (max-width: 1430px){
+    .MainPage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 80vh;
+    }
+    .Important2{
+        display: block;
+        grid-column: span 2;
+        font-size: 2.8vw;
+    }
+    .Important{
+        display: none;
+    }
+    .MainPage div p{
+        font-size: 2vw;
+    }
+    .MainPage div h1{
+    font-size: 2.8vw;
+}
+
+}
+@media only screen and (max-width: 1000px){
+    .MainPage{
+    display: block;
+    height: 80vh;
+    overflow-y: scroll;
+    }
+    .Important2{
+        display: block;
+        grid-column: span 2;
+        font-size:3vh;
+    }
+    .MainPage div p{
+        font-size: 2.5vh;
+    }
+    .MainPage div h1{
+    font-size: 3vh;
+    }
+}

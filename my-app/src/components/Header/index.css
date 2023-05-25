@@ -4,6 +4,7 @@
     grid-template-columns: 22px 1fr 22px;
     place-items: center;
     justify-content: center;
+    height: 10vh;
 }
 .header h1{
     color: #FFFFFF;
@@ -20,7 +21,7 @@
 
 .search-icon {
 position: absolute;
-top: 4.9vh;
+top: 2.25em;
 right: 10.8em;
 cursor: pointer;
 opacity: 0.5;
@@ -31,4 +32,13 @@ opacity: 0.5;
     margin-left: 2em;
     outline: none;
     cursor: pointer;
+    color: white;
+}
+.toggle:hover{
+    color:black
+}
+@media only screen and (max-width: 1000px){
+    .header div{
+        display: none;
+    }
 }

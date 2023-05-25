@@ -19,3 +19,33 @@
     cursor: pointer;
     margin-left: 80%;
 }
+.sideBar i:hover{
+    color:white
+}
+#Catergories{
+    padding: 0;
+
+}
+a{
+    list-style-type: none;
+    line-height: 3em;
+    display: block;
+    padding-left: 3em;
+    border-radius: 6px;
+    margin: 12px 12px;
+    text-align: start;
+    color: black;
+    text-decoration: none;
+}
+#Catergories a:hover{
+    background-color: #627888;
+    color:rgba(255, 255, 255, 0.849)
+}
+.sideBar hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 15px;
+    padding: 0;
+}
