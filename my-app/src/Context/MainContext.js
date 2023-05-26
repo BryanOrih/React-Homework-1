@@ -11,17 +11,18 @@ const MainContextProvider = (props) => {
       {name:"HTML", url:"HTML"},
       {name:"CSS", url: "CSS"},
       {name:"JavaScript", url: "JavaScript"},
-      {name:"Javascript Dom", url: "JavaScriptDom"},
       {name:"React", url: "React"}
     ])
-
+    // const [searchDisplay, setSearchDisplay] = useState("none")
     let contextObject ={
         catergories,
         setCaterogies,
         currentDisplay,
         setCurrentDisplay,
         toggle,
-        setToggle
+        setToggle,
+        // searchDisplay,
+        // setSearchDisplay
     }
 
   return (

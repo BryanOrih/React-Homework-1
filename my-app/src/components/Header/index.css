@@ -19,6 +19,9 @@
     width: 8em;
 }
 .input:focus{
+    outline: none;
+}
+#focus{
     border-radius: 10px 10px 0px 0px;
     outline: none;
 }
@@ -32,6 +35,24 @@ opacity: 0.5;
 .searchDisplay{
     position: absolute;
     background-color: white;
+    width: 10.75em;
+    margin-left: 1.5px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 0 0 10px 10px;
+}
+.searchDisplay > *{
+    list-style-type: none;
+    padding: 0;
+}
+a:hover{
+    background-color: grey;
+}
+.searchList{
+    margin: 0;
+    border-radius: 0;
+    padding-left: 2em;
 }
 .toggle{
     font-size: 30px;
